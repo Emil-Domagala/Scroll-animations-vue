@@ -1,0 +1,189 @@
+@import './_colors.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  min-height: 100%;
+  height: 100%;
+  background-color: var(--main-color);
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Bauziet Norm', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.3em;
+  font-feature-settings: 'tnum' on, 'lnum' on;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  color: var(--black-color);
+  min-height: 100%;
+  height: 100%;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+textarea,
+select {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  appearance: none;
+}
+button,
+input[type='button'],
+input[type='submit'],
+input[type='reset'] {
+  cursor: pointer;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  z-index: 0;
+}
+
+h1,
+h2 {
+  font-size: 56px;
+  line-height: 1em;
+  font-weight: 600;
+  margin-bottom: 0.3em;
+}
+
+[data-show-img] {
+  position: absolute;
+  left: 0;
+  top: 20%;
+}
+
+section {
+  position: relative;
+  height: 100vh;
+  text-align: center;
+  padding: 100px 30px;
+}
+
+section .left,
+section .right {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 30px;
+  width: 100%;
+  height: 100vh;
+}
+
+section .right {
+  display: none;
+}
+
+#hero,
+#final {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+}
+
+@media (min-width: 420px) {
+  body {
+    font-size: 24px;
+  }
+  h1,
+  h2 {
+    font-size: 72px;
+  }
+  section {
+    padding: 100px 80px;
+    height: 100vh;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    font-size: 28px;
+  }
+  h1,
+  h2 {
+    font-size: 110px;
+  }
+
+  section .right {
+    display: flex;
+  }
+  section .left {
+    text-align: left;
+    align-items: flex-start;
+  }
+}
+
+@font-face {
+  font-family: 'Bauziet Norm';
+  src: url(../assets/Bauziet/Bauziet-Norm-Light.ttf);
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Bauziet Norm';
+  src: url(../assets/Bauziet/Bauziet-Norm-Regular.ttf);
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Bauziet Norm';
+  src: url(../assets/Bauziet/Bauziet-Norm-Medium.ttf);
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Bauziet Norm';
+  src: url(../assets/Bauziet/Bauziet-Norm-SemiBold.ttf);
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Bauziet Norm';
+  src: url(../assets/Bauziet/Bauziet-Norm-Bold.ttf);
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Bauziet Norm';
+  src: url(../assets/Bauziet/Bauziet-Norm-ExtraBold.ttf);
+  font-style: normal;
+  font-weight: 800;
+}
